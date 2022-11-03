@@ -7,11 +7,11 @@ using UnityEngine;
 [CustomEditor(typeof(SwimmingCreature))]
 public class SwimmingCreatureEditor : Editor //dev
 {
-	private Vector3[] bezierPoints;
-	private Vector3[] tempPoints2;
-	private Vector3[] tempPoints1;
+	private Vector3[] _bezierPoints;
+	private Vector3[] _tempPoints2;
+	private Vector3[] _tempPoints1;
 
-	private Vector3[] bezierCurve;
+	private Vector3[] _bezierCurve;
 	
 	private void OnSceneGUI()
 	{
@@ -19,30 +19,35 @@ public class SwimmingCreatureEditor : Editor //dev
 		SwimmingCreature obj = (SwimmingCreature) target;
 		int count = obj.bezierPoints.Count;
 		
-		bezierCurve = new Vector3[count*11];
-		bezierPoints = new Vector3[count];
+		_bezierCurve = new Vector3[count*obj.stepsPerPoint];
+		_bezierPoints = new Vector3[count];
+
+		obj.bezierPoints[0] = obj.transform.position;
+		_bezierPoints[0] = obj.bezierPoints[0];
 		
-		for (int i=0; i<count; i++)
+		for (int i=1; i<count; i++)
 		{
 			obj.bezierPoints[i] = Handles.PositionHandle(obj.bezierPoints[i], Quaternion.identity);
 			Handles.Label(obj.bezierPoints[i], i.ToString());
-			bezierPoints[i] = obj.bezierPoints[i];
+			_bezierPoints[i] = obj.bezierPoints[i];
 		}
 
-		for (int i = 0; i < bezierCurve.Length; i++)
+		for (int i = 0; i < _bezierCurve.Length; i++)
 		{
-			tempPoints1 = bezierPoints;
+			_tempPoints1 = _bezierPoints;
 			for (int j = 1; j < count; j++)
 			{
-				tempPoints2 = new Vector3[count - j];
-				for (int k = 0; k < tempPoints2.Length; k++)
+				_tempPoints2 = new Vector3[count - j];
+				for (int k = 0; k < _tempPoints2.Length; k++)
 				{
-					tempPoints2[k] = Vector3.Lerp(tempPoints1[k], tempPoints1[k+1], i * 1f/(count*11-1));
+					_tempPoints2[k] = Vector3.Lerp(_tempPoints1[k], _tempPoints1[k+1], i * 1f/(count*obj.stepsPerPoint-1));
 				}
-				tempPoints1 = tempPoints2;
+				_tempPoints1 = _tempPoints2;
 			}
-			bezierCurve[i] = tempPoints2[0];
+			_bezierCurve[i] = _tempPoints2[0];
 		}
-		Handles.DrawPolyLine(bezierCurve);
+
+		obj.bezierCurve = _bezierCurve;
+		Handles.DrawPolyLine(_bezierCurve);
 	}
 }
