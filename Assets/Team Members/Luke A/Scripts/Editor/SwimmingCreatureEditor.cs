@@ -21,11 +21,8 @@ public class SwimmingCreatureEditor : Editor //dev
 		
 		_bezierCurve = new Vector3[count*obj.stepsPerPoint];
 		_bezierPoints = new Vector3[count];
-
-		obj.bezierPoints[0] = obj.transform.position;
-		_bezierPoints[0] = obj.bezierPoints[0];
 		
-		for (int i=1; i<count; i++)
+		for (int i=0; i<count; i++)
 		{
 			obj.bezierPoints[i] = Handles.PositionHandle(obj.bezierPoints[i], Quaternion.identity);
 			Handles.Label(obj.bezierPoints[i], i.ToString());
