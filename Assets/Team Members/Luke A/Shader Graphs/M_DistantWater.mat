@@ -21,6 +21,6 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - _FadeStrength: 30
+    - _FadeStrength: 45.16
     m_Colors:
     - _Colour: {r: 0, g: 0.827451, b: 0.85882354, a: 0}

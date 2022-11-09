@@ -24,5 +24,12 @@ Material:
         m_Texture: {fileID: 2800000, guid: 91b4c2f3fd9742d45972b649d61e6924, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors: []
+    m_Floats:
+    - _CausticStrength: 0.6
+    - _VoronoiDensity1: 320
+    - _VoronoiDensity2: 200
+    - _VoronoiSpeed1: 3.1
+    - _VoronoiSpeed2: 2.5
+    m_Colors:
+    - _CausticColour: {r: 0.9529411, g: 0.9372549, b: 0.8509804, a: 0}
+    - _GeneralColour: {r: 0.31372547, g: 0.7490196, b: 0.8196079, a: 0}
