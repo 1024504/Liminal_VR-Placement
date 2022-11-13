@@ -17,7 +17,7 @@ public class SwimmingCreature : MonoBehaviour
 	public Vector3[] bezierCurve;
 	public int stepsPerPoint = 10;
 
-	protected Transform _transform;
+	private Transform _transform;
 	private Rigidbody _rb;
 	
 	private int _nextPoint = 1;
@@ -34,10 +34,9 @@ public class SwimmingCreature : MonoBehaviour
     void FixedUpdate()
     {
 	    Vector3 position = _transform.position;
-	    Vector3 nextPosition = _transform.TransformDirection(bezierCurve[_nextPoint]);
-	    Vector3 heading = Vector3.Normalize(nextPosition - position));
-	    float distanceToNextPoint = Vector3.Distance(position, nextPosition);
-	    if (swimmingSpeed/60f < Vector3.Distance(position, nextPosition))
+	    Vector3 heading = Vector3.Normalize(bezierCurve[_nextPoint] - position);
+	    float distanceToNextPoint = Vector3.Distance(position, bezierCurve[_nextPoint]);
+	    if (swimmingSpeed/60f < Vector3.Distance(position, bezierCurve[_nextPoint]))
 	    {
 		    _rb.MovePosition(position + heading*(swimmingSpeed/60f));
 	    }
