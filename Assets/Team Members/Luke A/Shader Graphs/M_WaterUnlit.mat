@@ -31,4 +31,4 @@ Material:
     m_Colors:
     - _Colour: {r: 0, g: 0.9921569, b: 1, a: 0}
     - _SkyColour: {r: 0.6839622, g: 0.974322, b: 1, a: 0}
-    - _WaterColour: {r: 0, g: 0.82587975, b: 0.8584906, a: 0}
+    - _WaterColour: {r: 0, g: 0.8352941, b: 0.8666667, a: 0}
