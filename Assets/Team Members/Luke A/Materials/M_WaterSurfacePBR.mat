@@ -24,9 +24,24 @@ Material:
         m_Texture: {fileID: 2800000, guid: 6968e2cc148d1d242bd7fbd183dfaa6b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_980719A3_Texture:
+        m_Texture: {fileID: 2800000, guid: 9c47d61d860ba9748940d9ce59e7a0ba, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_DE69E0F_Texture:
         m_Texture: {fileID: 2800000, guid: 6968e2cc148d1d242bd7fbd183dfaa6b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors: []
+    m_Floats:
+    - Vector1_3E604BB: 3
+    - Vector1_42EE06B8: 0.1
+    - _SkyStrength: 1
+    - _WaveSpeed: 1
+    - _XWavelength: 5
+    m_Colors:
+    - Color_15369F3B: {r: 0, g: 0.58431375, b: 0.62352943, a: 0}
+    - _NormalMapSpeed: {r: 0, g: 0, b: 0, a: 0}
+    - _NormalMapSpeed1: {r: -0.05, g: 0.01, b: 0, a: 0}
+    - _NormalMapSpeed2: {r: 0.08, g: 0.05, b: 0, a: 0}
+    - _SkyColour: {r: 0.9333333, g: 0.9490196, b: 1, a: 0}
+    - _WaterColour: {r: 0, g: 0.9921569, b: 1, a: 0}
