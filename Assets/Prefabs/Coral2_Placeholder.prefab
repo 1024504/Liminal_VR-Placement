@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3191503984479853357}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: Coral2_Placeholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,7 +51,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 346ad400a9484774fbf8f9a841d0daf6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.88812566
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 346ad400a9484774fbf8f9a841d0daf6,
         type: 3}
