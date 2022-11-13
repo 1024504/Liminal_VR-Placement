@@ -22,6 +22,8 @@ Material:
     m_TexEnvs: []
     m_Floats:
     - _Clarity: 1
+    - _Colour2Strength: 0.708
     - _FadeStrength: 45.16
     m_Colors:
-    - _Colour: {r: 0, g: 0.5726284, b: 0.5943396, a: 0}
+    - _Colour: {r: 0, g: 0.83366406, b: 0.8679245, a: 0}
+    - _Colour2: {r: 0, g: 0.3483428, b: 0.6226415, a: 0}
