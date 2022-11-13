@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_Rock2
+  m_Shader: {fileID: -6465566751694194690, guid: 788ce1676c92bbb48bb9825480ae6bbd,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _SampleTexture2D_3019E671_Texture:
+        m_Texture: {fileID: 2800000, guid: 394855e570737cd4b8f715f98ef4ba8e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_33AEF5EC_Texture:
+        m_Texture: {fileID: 2800000, guid: 53e806d73876a974eb8922f2045f40ac, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_471E8E19_Texture:
+        m_Texture: {fileID: 2800000, guid: cc5a9c0adc2127f418cb55e0555fb0db, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_5C3E5E61_Texture:
+        m_Texture: {fileID: 2800000, guid: a749da098737e64449de10cf2356a414, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_E729E6CD_Texture:
+        m_Texture: {fileID: 2800000, guid: 1b1ef2aa648500745aa8f645099deecd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors: []
