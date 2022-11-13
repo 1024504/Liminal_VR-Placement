@@ -35,7 +35,7 @@ public class SwimmingCreature : MonoBehaviour
     {
 	    Vector3 position = _transform.position;
 	    Vector3 nextPosition = _transform.TransformDirection(bezierCurve[_nextPoint]);
-	    Vector3 heading = Vector3.Normalize(nextPosition - position));
+	    Vector3 heading = Vector3.Normalize(nextPosition - position);
 	    float distanceToNextPoint = Vector3.Distance(position, nextPosition);
 	    if (swimmingSpeed/60f < Vector3.Distance(position, nextPosition))
 	    {
