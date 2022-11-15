@@ -34,11 +34,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _CausticStregnth: 0.6
-    - _GeneralColourStrength: 0.2
-    - _VoronoiDensity1: 480
-    - _VoronoiDensity2: 300
+    - _GeneralColourStrength: 0.584
+    - _VoronoiDensity1: 29.5
+    - _VoronoiDensity2: 56.9
     - _VoronoiSpeed1: 3.1
     - _VoronoiSpeed2: 2.5
     m_Colors:
     - Color_28845522: {r: 0.9528302, g: 0.94799, b: 0.92136884, a: 0}
-    - _GeneralColour: {r: 1, g: 0.9764151, b: 0.9764151, a: 0}
+    - _GeneralColour: {r: 0.020914912, g: 0.6412487, b: 0.8867924, a: 0}
