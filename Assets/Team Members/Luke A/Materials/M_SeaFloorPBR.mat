@@ -33,10 +33,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _CausticStregnth: 0.6
+    - _CausticStregnth: 0.3
     - _GeneralColourStrength: 0.584
+    - _VoronoiDensity: 150
     - _VoronoiDensity1: 29.5
     - _VoronoiDensity2: 56.9
+    - _VoronoiSpeed: 2.5
     - _VoronoiSpeed1: 3.1
     - _VoronoiSpeed2: 2.5
     m_Colors:
