@@ -4241,6 +4241,58 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1122228830, guid: a8bccb2cf4b930e4894d18b4b5c0fa00, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122228830, guid: a8bccb2cf4b930e4894d18b4b5c0fa00, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122228830, guid: a8bccb2cf4b930e4894d18b4b5c0fa00, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122228830, guid: a8bccb2cf4b930e4894d18b4b5c0fa00, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122228830, guid: a8bccb2cf4b930e4894d18b4b5c0fa00, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122228830, guid: a8bccb2cf4b930e4894d18b4b5c0fa00, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122228830, guid: a8bccb2cf4b930e4894d18b4b5c0fa00, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122228830, guid: a8bccb2cf4b930e4894d18b4b5c0fa00, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122228829, guid: a8bccb2cf4b930e4894d18b4b5c0fa00, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122228828, guid: a8bccb2cf4b930e4894d18b4b5c0fa00, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122228828, guid: a8bccb2cf4b930e4894d18b4b5c0fa00, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122228828, guid: a8bccb2cf4b930e4894d18b4b5c0fa00, type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122228828, guid: a8bccb2cf4b930e4894d18b4b5c0fa00, type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8bccb2cf4b930e4894d18b4b5c0fa00, type: 3}
 --- !u!1001 &62051263
