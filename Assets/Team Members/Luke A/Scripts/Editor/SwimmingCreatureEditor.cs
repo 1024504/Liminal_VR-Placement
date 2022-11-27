@@ -24,7 +24,7 @@ public class SwimmingCreatureEditor : Editor //dev
 		
 		for (int i=0; i<count; i++)
 		{
-			obj.bezierPoints[i] = Handles.PositionHandle(obj.transform.TransformDirection(obj.bezierPoints[i]), Quaternion.identity);
+			obj.bezierPoints[i] = Handles.PositionHandle(obj.bezierPoints[i], Quaternion.identity);
 			Handles.Label(obj.bezierPoints[i], i.ToString());
 			_bezierPoints[i] = obj.bezierPoints[i];
 		}
