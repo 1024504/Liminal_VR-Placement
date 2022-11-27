@@ -20,6 +20,14 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _MainTexture:
+        m_Texture: {fileID: 2800000, guid: 635212ffe3a199441b8cb89b35c42a4b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 2800000, guid: 4a97c715212cdab42adbc70c4dfa7483, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_615A18BE_Texture:
         m_Texture: {fileID: 2800000, guid: 49a897204f1710b428ffead3d36c65e4, type: 3}
         m_Scale: {x: 1, y: 1}
