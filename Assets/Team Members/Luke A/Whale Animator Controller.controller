@@ -28,7 +28,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Luke A Animator Controller 1
+  m_Name: Whale Animator Controller
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
@@ -65,7 +65,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -3031136733361058501, guid: 612b7ef5f3146ea42a4d6d39fb439eab,
+  m_Motion: {fileID: 3374748389425109202, guid: a6dff5fb6051a7447827a802a716c0ea,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 

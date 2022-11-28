@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Team Members/Emma/Scenes/Terrain Scene/Terrain Test Scene.unity
-    guid: be7000b360e5ffb4d9025f00a8515c5e
+    path: Assets/Team Members/Jesse/Jesse_Updated_Terrain_Test_Scene.unity
+    guid: c42f2307df717c94ea427dfb8b780940
   m_configObjects: {}
