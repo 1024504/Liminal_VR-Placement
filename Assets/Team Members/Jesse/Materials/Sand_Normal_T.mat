@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_SeafloorPBR
+  m_Name: Sand_Normal_T
   m_Shader: {fileID: 4800000, guid: 7e06afdda91910048bc0ec006c930b4c, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -20,18 +20,18 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 635212ffe3a199441b8cb89b35c42a4b, type: 3}
-        m_Scale: {x: 5, y: 5}
+        m_Texture: {fileID: 2800000, guid: 4a97c715212cdab42adbc70c4dfa7483, type: 3}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
-        m_Texture: {fileID: 2800000, guid: 4a97c715212cdab42adbc70c4dfa7483, type: 3}
-        m_Scale: {x: 5, y: 5}
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _CausticSize: 5
-    - _CausticSpeed: 3
+    - _CausticSize: 2
+    - _CausticSpeed: 0
     - _CausticStrength: 1
-    - _GeneralColourStrength: 0.6
+    - _GeneralColourStrength: 0.5
     m_Colors:
     - _CausticColour: {r: 1, g: 1, b: 1, a: 1}
     - _GeneralColour: {r: 0, g: 0.5, b: 1, a: 1}

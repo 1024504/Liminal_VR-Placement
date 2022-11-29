@@ -28,7 +28,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Angel Idle Animator Controller
+  m_Name: AngelFish Animator Controller
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
@@ -65,7 +65,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -623603649343465320, guid: 30314eb18c9336346aeb4de34dbbfc55,
+  m_Motion: {fileID: -556412864892267000, guid: 31edef3c8fbda1646b035a70c787e73a,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
