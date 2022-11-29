@@ -28,7 +28,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Whale Animator Controller
+  m_Name: Angel Idle Animator Controller
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
@@ -65,7 +65,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 3374748389425109202, guid: a6dff5fb6051a7447827a802a716c0ea,
+  m_Motion: {fileID: -623603649343465320, guid: 30314eb18c9336346aeb4de34dbbfc55,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 

@@ -22,6 +22,15 @@ public class SwimmingCreature : MonoBehaviour
 	
 	private int _nextPoint = 1;
 
+	[Serializable]
+	public struct SpeedTiming
+	{
+		public float delaySinceLastChange;
+		public float newSwimmingSpeed;
+	}
+
+	public List<SpeedTiming> SpeedTimings;
+
 	void Start()
 	{
 		_transform = transform;
@@ -29,6 +38,16 @@ public class SwimmingCreature : MonoBehaviour
         CalculateBezierCurve();
         _transform.position = bezierCurve[0];
         _transform.rotation = Quaternion.LookRotation(bezierCurve[1] - bezierCurve[0]);
+        if (SpeedTimings.Count > 0) StartCoroutine(ChangeSpeed());
+	}
+
+	private IEnumerator ChangeSpeed()
+	{
+		for (int i = 0; i < SpeedTimings.Count; i++)
+		{
+			yield return new WaitForSeconds(SpeedTimings[i].delaySinceLastChange);
+			swimmingSpeed = SpeedTimings[i].newSwimmingSpeed;
+		}
 	}
 
     void FixedUpdate()
