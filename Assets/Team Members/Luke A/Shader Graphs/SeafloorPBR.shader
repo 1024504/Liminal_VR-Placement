@@ -61,7 +61,7 @@
 			o.Albedo = colour;
 		    o.Normal = tex2D(_NormalTex, i.uv_MainTex).rgb;
 		    o.Metallic = 0;
-		    o.Smoothness = 0.5;
+		    o.Smoothness = 0;
 		}
 		ENDCG
 	}

@@ -20,18 +20,18 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 635212ffe3a199441b8cb89b35c42a4b, type: 3}
-        m_Scale: {x: 5, y: 5}
+        m_Texture: {fileID: 2800000, guid: 1f1fbe00b19f3f743a365c6439666e73, type: 3}
+        m_Scale: {x: 15, y: 15}
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
-        m_Texture: {fileID: 2800000, guid: 4a97c715212cdab42adbc70c4dfa7483, type: 3}
-        m_Scale: {x: 5, y: 5}
+        m_Texture: {fileID: 2800000, guid: 49a897204f1710b428ffead3d36c65e4, type: 3}
+        m_Scale: {x: 15, y: 15}
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _CausticSize: 5
     - _CausticSpeed: 3
-    - _CausticStrength: 1
+    - _CausticStrength: 0.3
     - _GeneralColourStrength: 0.6
     m_Colors:
     - _CausticColour: {r: 1, g: 1, b: 1, a: 1}
-    - _GeneralColour: {r: 0, g: 0.5, b: 1, a: 1}
+    - _GeneralColour: {r: 0, g: 0.36936733, b: 0.735849, a: 1}
