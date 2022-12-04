@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_WaterSurfacePBR
+  m_Shader: {fileID: 4800000, guid: bf0f9a76a08e6584191d48abdba33225, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 0, y: 0}
+        m_Offset: {x: 0, y: 0}
+    - _NormalTex:
+        m_Texture: {fileID: 2800000, guid: 625377c054b788b4dab22489b3ed1f79, type: 3}
+        m_Scale: {x: 5, y: 5}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _FresnelPower: 1
+    - _NormalSpeed1: 0.05
+    - _NormalSpeed2: 0.02
+    - _SkyColourStrength: 1
+    m_Colors:
+    - _SkyColour: {r: 0.7971698, g: 1, b: 0.99795073, a: 1}
+    - _WaterColour: {r: 0.25907797, g: 0.51734024, b: 0.7735849, a: 1}
