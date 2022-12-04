@@ -52,7 +52,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Swimming_Cycle
-  m_Speed: 0.8
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 5973264846040699885}
@@ -65,7 +65,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 3374748389425109202, guid: a6dff5fb6051a7447827a802a716c0ea,
+  m_Motion: {fileID: 3374748389425109202, guid: 79e2b1909d5b36c478ad2f2f33bed60b,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 

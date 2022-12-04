@@ -7,6 +7,8 @@ public class BubbleBreathing : MonoBehaviour
 {
 	public Transform cameraTransform;
 
+	public float scalingPower = 1;
+	
 	private Renderer _renderer;
 
 	private readonly Color _breatheColour = new Color(0f, 0.8f, 1f, 1f);
@@ -37,7 +39,7 @@ public class BubbleBreathing : MonoBehaviour
 	{
 		for (int i = 0; i < sizeChanges.Count; i++)
 		{
-			StartCoroutine(ChangeColour(sizeChanges[i].holdDelay));
+			// StartCoroutine(ChangeColour(sizeChanges[i].holdDelay));
 			yield return new WaitForSeconds(sizeChanges[i].holdDelay);
 			float oldScale = transform.localScale.x;
 			float newScale = sizeChanges[i].newScale;
@@ -46,8 +48,8 @@ public class BubbleBreathing : MonoBehaviour
 			while (progress/totalDelay < 1)
 			{
 				yield return new WaitForFixedUpdate();
+				transform.localScale = Mathf.Lerp(oldScale, newScale, 1-Mathf.Pow(1-progress/totalDelay,scalingPower)) * Vector3.one;
 				progress += Time.fixedDeltaTime;
-				transform.localScale = Mathf.Lerp(oldScale, newScale, progress/totalDelay) * Vector3.one;
 			}
 		}
 	}

@@ -25,12 +25,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
         m_Texture: {fileID: 2800000, guid: 625377c054b788b4dab22489b3ed1f79, type: 3}
-        m_Scale: {x: 5, y: 5}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _FresnelPower: 1
-    - _NormalSpeed1: 0.05
-    - _NormalSpeed2: 0.02
+    - _NormalSpeed1: 0.02
+    - _NormalSpeed2: 0.05
     - _SkyColourStrength: 1
     m_Colors:
     - _SkyColour: {r: 0.7971698, g: 1, b: 0.99795073, a: 1}
