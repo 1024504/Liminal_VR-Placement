@@ -190,7 +190,7 @@ PrefabInstance:
     - target: {fileID: 87870621454096082, guid: a8bccb2cf4b930e4894d18b4b5c0fa00,
         type: 3}
       propertyPath: m_SceneBindings.Array.size
-      value: 10
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 87870621454096082, guid: a8bccb2cf4b930e4894d18b4b5c0fa00,
         type: 3}
@@ -227,7 +227,7 @@ PrefabInstance:
       objectReference: {fileID: 291565114}
     - target: {fileID: 1122228830, guid: a8bccb2cf4b930e4894d18b4b5c0fa00, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 54
+      value: 848.22
       objectReference: {fileID: 0}
     - target: {fileID: 1122228830, guid: a8bccb2cf4b930e4894d18b4b5c0fa00, type: 3}
       propertyPath: m_AnchorMin.y
@@ -247,11 +247,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1122228830, guid: a8bccb2cf4b930e4894d18b4b5c0fa00, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -40
+      value: -1295.1997
       objectReference: {fileID: 0}
     - target: {fileID: 1122228830, guid: a8bccb2cf4b930e4894d18b4b5c0fa00, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -42.80017
       objectReference: {fileID: 0}
     - target: {fileID: 1122228830, guid: a8bccb2cf4b930e4894d18b4b5c0fa00, type: 3}
       propertyPath: m_SizeDelta.y
