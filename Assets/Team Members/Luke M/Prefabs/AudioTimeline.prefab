@@ -49,9 +49,9 @@ Canvas:
   m_GameObject: {fileID: 804779090}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -533,16 +533,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122228827}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -67}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 804779095}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -683}
-  m_SizeDelta: {x: 1820, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -42.80017, y: 848.22}
+  m_SizeDelta: {x: -1295.1997, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1122228829
 CanvasRenderer:
@@ -551,7 +551,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122228827}
-  m_CullTransparentMesh: 0
+  m_CullTransparentMesh: 1
 --- !u!114 &1122228828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -600,8 +600,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 52
-  m_fontSizeBase: 52
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -617,7 +617,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 4
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -638,7 +638,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 186.07974, y: 0, z: 92.946365, w: -41.143356}
   m_textInfo:
     textComponent: {fileID: 1122228828}
     characterCount: 50
@@ -646,7 +646,7 @@ MonoBehaviour:
     spaceCount: 9
     wordCount: 10
     linkCount: 0
-    lineCount: 1
+    lineCount: 41
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -831,22 +831,22 @@ AudioReverbZone:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87870620179418545}
   m_Enabled: 1
-  m_MinDistance: 1.28
-  m_MaxDistance: 1.28
-  m_ReverbPreset: 15
-  m_Room: -1000
-  m_RoomHF: -270
-  m_DecayTime: 1.49
-  m_DecayHFRatio: 0.86
-  m_Reflections: -1204
-  m_ReflectionsDelay: 0.007
-  m_Reverb: -4
-  m_ReverbDelay: 0.011
-  m_HFReference: 5000
-  m_Diffusion: 100
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
+  m_MinDistance: 1500
+  m_MaxDistance: 1500
+  m_ReverbPreset: 27
+  m_Room: 0
+  m_RoomHF: -2695
+  m_DecayTime: 4.09
+  m_DecayHFRatio: 1
+  m_Reflections: -3567
+  m_ReflectionsDelay: 0.027
+  m_Reverb: 284
+  m_ReverbDelay: 0
+  m_HFReference: 4880
+  m_Diffusion: 65.1
+  m_Density: 36
+  m_LFReference: 502
+  m_RoomLF: -505
 --- !u!1 &87870620828370484
 GameObject:
   m_ObjectHideFlags: 0
@@ -1299,6 +1299,18 @@ PlayableDirector:
     value: {fileID: 87870620116685426}
   - key: {fileID: 5295774249582624991, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
     value: {fileID: 804779090}
+  - key: {fileID: 5366594544360391665, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 1004535064636829178, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -3227223292830801003, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 3352802537063598476, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 1049032005996476832, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 4833455484342766823, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &87870621639149850
@@ -1547,7 +1559,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.255
+      value: 0.199
       inSlope: 0
       outSlope: 0
       tangentMode: 0
