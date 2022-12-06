@@ -49,7 +49,7 @@ MonoBehaviour:
   cameraTransform: {fileID: 0}
   scalingPower: 1.5
   sizeChanges:
-  - holdDelay: 1
+  - holdDelay: 54.4
     changeDelay: 1.8
     newScale: 0.5
   - holdDelay: 0.3
