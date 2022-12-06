@@ -18,6 +18,7 @@
 		#pragma target 3.0
 
         #include "Random.cginc"
+		#include "UnityCG.cginc"
 
 		float _CausticSize;
 		float _CausticSpeed;
@@ -31,20 +32,25 @@
 		struct Input {
 			float3 worldPos;
 		    float2 uv_MainTex;
+		    float3 worldNormal; INTERNAL_DATA
+		    half3 tspace0 : TEXCOORD1;
+		    half3 tspace1 : TEXCOORD2;
+		    half3 tspace2 : TEXCOORD3;
+		    float2 uv : TEXCOORD4;
 		};
 
 		float voronoiNoise(float2 value){
-		    float2 baseCell = floor(value);
+            const float2 baseCell = floor(value);
 
 		    float minDistToCell = 10;
 		    [unroll]
 		    for(int x=-1; x<=1; x++){
 		        [unroll]
 		        for(int y=-1; y<=1; y++){
-		            float2 cell = baseCell + float2(x, y);
-		            float2 cellPosition = cell + voronoi(cell, _Time[1]*_CausticSpeed);
-		            float2 toCell = cellPosition - value;
-		            float distToCell = length(toCell);
+                    const float2 cell = baseCell + float2(x, y);
+                    const float2 cellPosition = cell + voronoi(cell, _Time[1]*_CausticSpeed);
+                    const float2 toCell = cellPosition - value;
+                    const float distToCell = length(toCell);
 		            if(distToCell < minDistToCell){
 		                minDistToCell = distToCell;
 		            }
@@ -54,12 +60,12 @@
 		}
 
 		void surf (Input i, inout SurfaceOutputStandard o) {
-			float2 value = i.worldPos.xz / _CausticSize;
-			float noise = clamp(pow(voronoiNoise(value), 6), 0, 1) * _CausticStrength;
-		    float3 colour = lerp(lerp(tex2D(_MainTex, i.uv_MainTex), _GeneralColour, _GeneralColourStrength), _CausticColour, noise);
+            const float2 value = i.worldPos.xz / _CausticSize;
+            const float noise = clamp(pow(voronoiNoise(value), 6), 0, 1) * _CausticStrength;
+            const float3 colour = lerp(lerp(tex2D(_MainTex, i.uv_MainTex), _GeneralColour, _GeneralColourStrength), _CausticColour, noise);
 		    
 			o.Albedo = colour;
-		    o.Normal = tex2D(_NormalTex, i.uv_MainTex).rgb;
+		    o.Normal = UnpackNormal(tex2D(_NormalTex, i.uv_MainTex));
 		    o.Metallic = 0;
 		    o.Smoothness = 0;
 		}
