@@ -51,7 +51,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 0}
-  m_PlaneDistance: 1
+  m_PlaneDistance: 1.1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -533,7 +533,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122228827}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -67}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 804779095}
@@ -541,8 +541,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -42.80017, y: 848.22}
-  m_SizeDelta: {x: -1295.1997, y: 30}
+  m_AnchoredPosition: {x: -28.799866, y: 378.89996}
+  m_SizeDelta: {x: -394.00012, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1122228829
 CanvasRenderer:
@@ -600,8 +600,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -617,7 +617,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 4
+  m_firstOverflowCharacterIndex: 23
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -646,7 +646,7 @@ MonoBehaviour:
     spaceCount: 9
     wordCount: 10
     linkCount: 0
-    lineCount: 41
+    lineCount: 5
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -1310,6 +1310,8 @@ PlayableDirector:
   - key: {fileID: 1049032005996476832, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
     value: {fileID: 0}
   - key: {fileID: 4833455484342766823, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 9192581174390914633, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
     value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
