@@ -10,7 +10,7 @@ public class SwimmingCreature : MonoBehaviour
 	public float turningStrength;
 	public List<Vector3> bezierPoints = new List<Vector3>();
 
-	public bool handlesAlwaysOn; //dev
+	public bool loopPath = true;
 
 	private Vector3[] _tempPoints1;
 	private Vector3[] _tempPoints2;
@@ -52,6 +52,17 @@ public class SwimmingCreature : MonoBehaviour
 
     void FixedUpdate()
     {
+	    if(swimmingSpeed == 0) return;
+	    if(_nextPoint < bezierCurve.Length) MoveAlongPath();
+	    else if (loopPath)
+	    {
+		    _nextPoint = 1;
+		    MoveAlongPath();
+	    }
+    }
+
+    void MoveAlongPath()
+    {
 	    Vector3 position = _transform.position;
 	    Vector3 heading = Vector3.Normalize(bezierCurve[_nextPoint] - position);
 	    float distanceToNextPoint = Vector3.Distance(position, bezierCurve[_nextPoint]);
@@ -62,12 +73,8 @@ public class SwimmingCreature : MonoBehaviour
 	    else
 	    {
 		    _rb.MovePosition(position + heading*distanceToNextPoint);
-		    if (++_nextPoint >= bezierCurve.Length)
-		    {
-			    _nextPoint = 1;
-		    }
+		    _nextPoint++;
 	    }
-	    _rb.MoveRotation(Quaternion.Slerp(_transform.rotation,Quaternion.LookRotation(heading),turningStrength));
     }
 
     void CalculateBezierCurve()
