@@ -2,7 +2,9 @@
 	Properties {
 		_MainTex ("Albedo (RGB)", 2D) = "white" {}
 	    [Normal] _NormalTex("Normal Map", 2D) = "bump" {}
-	    _GeneralColour ("General Colour", Color) = (0,0.5,1)
+	    _MetallicTex("Metallic Map", 2D) = "black" {}
+	    _EmissionTex("Emission Map", 2D) = "black" {}
+        _GeneralColour ("General Colour", Color) = (0,0.5,1)
 	    _GeneralColourStrength ("General Colour Strength", Range(0,1)) = 0.5
 	    _CausticColour ("Caustic Colour", Color) = (1,1,1)
 	    _CausticStrength ("Caustic Strength", Range(0,1)) = 1
@@ -18,7 +20,6 @@
 		#pragma target 3.0
 
         #include "Random.cginc"
-		#include "UnityCG.cginc"
 
 		float _CausticSize;
 		float _CausticSpeed;
@@ -28,6 +29,8 @@
 		float _GeneralColourStrength;
 		float3 _CausticColour;
 		sampler2D _NormalTex;
+		sampler2D _MetallicTex;
+		sampler2D _EmissionTex;
 
 		struct Input {
 			float3 worldPos;
@@ -66,8 +69,9 @@
 		    
 			o.Albedo = colour;
 		    o.Normal = UnpackNormal(tex2D(_NormalTex, i.uv_MainTex));
-		    o.Metallic = 0;
+		    o.Metallic = tex2D(_MetallicTex, i.uv_MainTex).r;
 		    o.Smoothness = 0;
+		    o.Emission = tex2D(_EmissionTex, i.uv_MainTex);
 		}
 		ENDCG
 	}
