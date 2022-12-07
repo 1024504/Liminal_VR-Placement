@@ -7,9 +7,9 @@
         _GeneralColour ("General Colour", Color) = (0,0.5,1)
 	    _GeneralColourStrength ("General Colour Strength", Range(0,1)) = 0.5
 	    _CausticColour ("Caustic Colour", Color) = (1,1,1)
-	    _CausticStrength ("Caustic Strength", Range(0,1)) = 1
-	    _CausticSize ("Caustic Size", Float) = 2
-	    _CausticSpeed ("Caustic Speed", Float) = 0
+	    _CausticStrength ("Caustic Strength", Range(0,1)) = 0.5
+	    _CausticSize ("Caustic Size", Float) = 0.03
+	    _CausticSpeed ("Caustic Speed", Float) = 1
 }
 	SubShader {
 		Tags{ "RenderType"="Opaque" "Queue"="Geometry"}
