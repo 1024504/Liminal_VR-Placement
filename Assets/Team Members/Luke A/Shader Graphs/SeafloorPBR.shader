@@ -24,10 +24,10 @@
 		float _CausticSize;
 		float _CausticSpeed;
 		float _CausticStrength;
+		float3 _CausticColour;
 		sampler2D _MainTex;
 		float3 _GeneralColour;
 		float _GeneralColourStrength;
-		float3 _CausticColour;
 		sampler2D _NormalTex;
 		sampler2D _MetallicTex;
 		sampler2D _EmissionTex;
