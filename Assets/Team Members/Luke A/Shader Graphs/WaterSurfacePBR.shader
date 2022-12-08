@@ -44,7 +44,7 @@
 
 		void surf (Input i, inout SurfaceOutputStandard o)
 		{
-            const float3 normalScroll = lerp(tex2D(_NormalTex, i.uv_MainTex+_NormalSpeed1*_Time[1]).rgb, tex2D(_NormalTex, i.uv_MainTex+_NormalSpeed2*_Time[1]).rgb, 0.3);
+            const float3 normalScroll = lerp(UnpackNormal(tex2D(_NormalTex, i.uv_MainTex+_NormalSpeed1*_Time[1])), tex2D(_NormalTex, i.uv_MainTex+_NormalSpeed2*_Time[1]).rgb, 0.3);
 
 		    const float3 albedo = lerp(_WaterColour, _SkyColour,(1-FresnelEffect(normalScroll, i.viewDir, _FresnelPower))*_SkyColourStrength);
 		    
