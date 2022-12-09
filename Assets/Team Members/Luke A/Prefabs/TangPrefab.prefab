@@ -52,7 +52,7 @@ MonoBehaviour:
   bezierPoints:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
-  handlesAlwaysOn: 0
+  loopPath: 1
   bezierCurve:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
@@ -104,7 +104,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dac1688205fabd64a87dca18537b7f97, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.675
+  m_Volume: 0.311
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -223,16 +223,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: TangSwimANM
       objectReference: {fileID: 0}
-    - target: {fileID: -8237348023074785119, guid: 5fb5058ab4b52fe4f8e360b16835a66a,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 8e4e2534a858e274fb3514a2d07ca9b9, type: 2}
-    - target: {fileID: -6057140222963153312, guid: 5fb5058ab4b52fe4f8e360b16835a66a,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 4a6deabab35862c4ab162461daeba096, type: 2}
     - target: {fileID: -4216859302048453862, guid: 5fb5058ab4b52fe4f8e360b16835a66a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -337,6 +327,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 5fb5058ab4b52fe4f8e360b16835a66a,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4a6deabab35862c4ab162461daeba096, type: 2}
+    - target: {fileID: -8237348023074785119, guid: 5fb5058ab4b52fe4f8e360b16835a66a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fb5058ab4b52fe4f8e360b16835a66a, type: 3}

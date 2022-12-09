@@ -52,7 +52,7 @@ MonoBehaviour:
   bezierPoints:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
-  handlesAlwaysOn: 0
+  loopPath: 1
   bezierCurve:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
@@ -104,7 +104,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dac1688205fabd64a87dca18537b7f97, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.675
+  m_Volume: 0.413
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -223,16 +223,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HerringSwimANM
       objectReference: {fileID: 0}
-    - target: {fileID: -6361693711389792060, guid: 6d4a96c62370113469634a9a1683bc55,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 51feabb181097584cba6fe7c41494608, type: 2}
-    - target: {fileID: -6057140222963153312, guid: 6d4a96c62370113469634a9a1683bc55,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 5d8f0d98b0ed15341a8d8cafff747058, type: 2}
     - target: {fileID: -4216859302048453862, guid: 6d4a96c62370113469634a9a1683bc55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -312,6 +302,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 6d4a96c62370113469634a9a1683bc55,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5d8f0d98b0ed15341a8d8cafff747058, type: 2}
+    - target: {fileID: -6361693711389792060, guid: 6d4a96c62370113469634a9a1683bc55,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d4a96c62370113469634a9a1683bc55, type: 3}
