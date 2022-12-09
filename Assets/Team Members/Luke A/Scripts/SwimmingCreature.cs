@@ -50,7 +50,7 @@ public class SwimmingCreature : MonoBehaviour
 		}
 	}
 
-    void FixedUpdate()
+    void Update()
     {
 	    if(swimmingSpeed == 0) return;
 	    if(_nextPoint < bezierCurve.Length) MoveAlongPath();
@@ -75,6 +75,7 @@ public class SwimmingCreature : MonoBehaviour
 		    _rb.MovePosition(position + heading*distanceToNextPoint);
 		    _nextPoint++;
 	    }
+	    _rb.MoveRotation(Quaternion.Slerp(_transform.rotation,Quaternion.LookRotation(heading),turningStrength));
     }
 
     void CalculateBezierCurve()
