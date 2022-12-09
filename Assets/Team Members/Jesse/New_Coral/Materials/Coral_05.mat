@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Coral_05
-  m_Shader: {fileID: 4800000, guid: 7e06afdda91910048bc0ec006c930b4c, type: 3}
+  m_Shader: {fileID: 4800000, guid: 77deff084ee4a324abd7dea0ef42e395, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -31,8 +31,16 @@ Material:
         m_Texture: {fileID: 2800000, guid: a09944a8219fd9840b3e385b0692131b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _NoiseTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _NormalTex:
         m_Texture: {fileID: 2800000, guid: aa3bb23557e90d94dbbfc5c0f07374dc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -40,6 +48,20 @@ Material:
     - _CausticSpeed: 1
     - _CausticStrength: 0.5
     - _GeneralColourStrength: 0
+    - _MBAmplitude: 1
+    - _MBAmplitudeOffset: 0.5
+    - _MBDefaultBending: 0
+    - _MBFrequency: 0.4
+    - _MBFrequencyOffset: 1
+    - _MBMaxHeight: 0.7
+    - _MBPhase: 2
+    - _MBWindDir: 76
+    - _MBWindDirOffset: 100
+    - _Metallic: 0
+    - _Smoothness: 0
+    - __dirty: 1
     m_Colors:
     - _CausticColour: {r: 1, g: 1, b: 1, a: 1}
     - _GeneralColour: {r: 0, g: 0.5, b: 1, a: 1}
+    - _NoisePannerSpeed: {r: 0.05, g: 0.03, b: 0, a: 0}
+    - _NoiseTextureTilling: {r: 1, g: 1, b: 1, a: 1}
