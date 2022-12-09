@@ -362,7 +362,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Time your breathing to the motions of the fish.
+            m_StringArgument: Time your breathing to the motions of the bubble.
             m_BoolArgument: 0
           m_CallState: 1
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -1776,8 +1776,6 @@ PlayableDirector:
     value: {fileID: 87870621639149849}
   - key: {fileID: -8794930419131188396, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
     value: {fileID: 87870620828370483}
-  - key: {fileID: -1947672646816527736, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
-    value: {fileID: 0}
   - key: {fileID: -3512675202777882940, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
     value: {fileID: 87870620116685426}
   - key: {fileID: 5295774249582624991, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
