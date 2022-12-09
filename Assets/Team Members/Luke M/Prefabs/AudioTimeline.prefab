@@ -51,7 +51,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 0}
-  m_PlaneDistance: 1.1
+  m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -1026,8 +1026,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -120}
-  m_SizeDelta: {x: -500, y: 30}
+  m_AnchoredPosition: {x: 0, y: -100}
+  m_SizeDelta: {x: -40, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1122228829
 CanvasRenderer:
@@ -1036,7 +1036,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122228827}
-  m_CullTransparentMesh: 0
+  m_CullTransparentMesh: 1
 --- !u!114 &1122228828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1102,7 +1102,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 46
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -1131,7 +1131,7 @@ MonoBehaviour:
     spaceCount: 12
     wordCount: 13
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -1784,18 +1784,20 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 1004535064636829178, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
     value: {fileID: 0}
+  - key: {fileID: 5366594544360391665, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 1004535064636829178, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
+    value: {fileID: 0}
   - key: {fileID: -3227223292830801003, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
     value: {fileID: 0}
-  - key: {fileID: 0}
+  - key: {fileID: -8723857888468806399, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -4205019930184357069, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
     value: {fileID: 0}
   - key: {fileID: -6404268621558702439, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
-    value: {fileID: 1268839546}
+    value: {fileID: 0}
   - key: {fileID: -7283258580853237326, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
-    value: {fileID: 1450315585}
-  - key: {fileID: -8723857888468806399, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
-    value: {fileID: 87870621639149849}
-  - key: {fileID: -4205019930184357069, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
-    value: {fileID: 87870621639149849}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &87870621639149850
