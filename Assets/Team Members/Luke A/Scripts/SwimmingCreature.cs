@@ -19,6 +19,8 @@ public class SwimmingCreature : MonoBehaviour
 
 	private Transform _transform;
 	private Rigidbody _rb;
+
+	[SerializeField] private float _framerate = 72f;
 	
 	private int _nextPoint = 1;
 
@@ -66,9 +68,9 @@ public class SwimmingCreature : MonoBehaviour
 	    Vector3 position = _transform.position;
 	    Vector3 heading = Vector3.Normalize(bezierCurve[_nextPoint] - position);
 	    float distanceToNextPoint = Vector3.Distance(position, bezierCurve[_nextPoint]);
-	    if (swimmingSpeed/60f < Vector3.Distance(position, bezierCurve[_nextPoint]))
+	    if (swimmingSpeed/_framerate < Vector3.Distance(position, bezierCurve[_nextPoint]))
 	    {
-		    _rb.MovePosition(position + heading*(swimmingSpeed/60f));
+		    _rb.MovePosition(position + heading*(swimmingSpeed/_framerate));
 	    }
 	    else
 	    {
