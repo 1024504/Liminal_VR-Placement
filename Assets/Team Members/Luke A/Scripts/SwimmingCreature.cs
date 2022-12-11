@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class SwimmingCreature : MonoBehaviour
 {
+	public bool invisibleOnStart;
+	
 	public float swimmingSpeed;
 	[Range(0,1)]
 	public float turningStrength;
@@ -33,8 +35,11 @@ public class SwimmingCreature : MonoBehaviour
 
 	public List<SpeedTiming> SpeedTimings;
 
+	private SkinnedMeshRenderer[] _mesh;
+	
 	void Start()
 	{
+		_mesh = GetComponentsInChildren<SkinnedMeshRenderer>();
 		_transform = transform;
 		_rb = GetComponent<Rigidbody>();
         CalculateBezierCurve();
@@ -49,6 +54,12 @@ public class SwimmingCreature : MonoBehaviour
 		{
 			yield return new WaitForSeconds(SpeedTimings[i].delaySinceLastChange);
 			swimmingSpeed = SpeedTimings[i].newSwimmingSpeed;
+			if (!invisibleOnStart) continue;
+			if (i != 0) continue;
+			foreach (SkinnedMeshRenderer mesh in _mesh)
+			{
+				mesh.gameObject.SetActive(true);
+			}
 		}
 	}
 
