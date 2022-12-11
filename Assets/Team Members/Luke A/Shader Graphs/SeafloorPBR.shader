@@ -35,6 +35,7 @@
 		struct Input {
 			float3 worldPos;
 		    float2 uv_MainTex;
+		    float2 uv_NormalTex;
 		    float3 worldNormal; INTERNAL_DATA
 		    half3 tspace0 : TEXCOORD1;
 		    half3 tspace1 : TEXCOORD2;
@@ -68,7 +69,7 @@
             const float3 colour = lerp(lerp(tex2D(_MainTex, i.uv_MainTex), _GeneralColour, _GeneralColourStrength), _CausticColour, noise);
 		    
 			o.Albedo = colour;
-		    o.Normal = UnpackNormal(tex2D(_NormalTex, i.uv_MainTex));
+		    o.Normal = UnpackNormal(tex2D(_NormalTex, i.uv_NormalTex));
 		    o.Metallic = tex2D(_MetallicTex, i.uv_MainTex).r;
 		    o.Smoothness = 0;
 		    o.Emission = tex2D(_EmissionTex, i.uv_MainTex);

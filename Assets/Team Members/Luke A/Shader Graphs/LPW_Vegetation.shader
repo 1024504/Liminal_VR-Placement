@@ -42,6 +42,7 @@ Shader "Nicrom/LPW/ASE/Low Poly Vegetation"
 		struct Input
 		{
 			float2 uv_texcoord;
+		    float2 uv_NormalTex;
 		    float3 worldPos;
 		};
 
@@ -154,7 +155,7 @@ Shader "Nicrom/LPW/ASE/Low Poly Vegetation"
             const float3 colour = lerp(Albedo292, _CausticColour, noise);
 			
 			o.Albedo = colour.rgb;
-		    o.Normal = UnpackNormal(tex2D(_NormalTex, uv_MainTex));
+		    o.Normal = UnpackNormal(tex2D(_NormalTex, i.uv_NormalTex));
 		    o.Emission = tex2D(_EmissionTex, uv_MainTex);
 			o.Metallic = _Metallic;
 			o.Smoothness = _Smoothness;
