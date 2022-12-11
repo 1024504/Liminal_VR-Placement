@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2440585870579271875}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 74558837971473721}
   m_Father: {fileID: 0}
@@ -52,7 +52,7 @@ MonoBehaviour:
   bezierPoints:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
-  handlesAlwaysOn: 0
+  loopPath: 1
   bezierCurve:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
@@ -223,16 +223,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MackerelSwimANM
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 2a82cd775f229e74cb9bbf9a77a783f1,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 21fcb46533800c742a18aad088223e43, type: 2}
-    - target: {fileID: -5031394126591354124, guid: 2a82cd775f229e74cb9bbf9a77a783f1,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 08e0387baf1ea954c90093a0a68c3d2b, type: 2}
     - target: {fileID: -4216859302048453862, guid: 2a82cd775f229e74cb9bbf9a77a783f1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -343,6 +333,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 2a82cd775f229e74cb9bbf9a77a783f1,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 21fcb46533800c742a18aad088223e43, type: 2}
+    - target: {fileID: -5031394126591354124, guid: 2a82cd775f229e74cb9bbf9a77a783f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 08e0387baf1ea954c90093a0a68c3d2b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a82cd775f229e74cb9bbf9a77a783f1, type: 3}
 --- !u!4 &74558837971473721 stripped

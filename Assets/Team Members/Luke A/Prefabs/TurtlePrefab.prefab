@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 7799676743293831932}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 3981052134520132234}
   m_Father: {fileID: 0}
@@ -55,7 +55,7 @@ MonoBehaviour:
   - {x: -58.37624, y: 4.4467354, z: 43.742798}
   - {x: 16.086533, y: 0, z: 83.604744}
   - {x: 17.5, y: 7.7, z: -19}
-  handlesAlwaysOn: 0
+  loopPath: 1
   bezierCurve:
   - {x: 17.5, y: 7.7, z: -19}
   - {x: 12.512024, y: 6.8125725, z: -22.237984}
@@ -314,17 +314,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 612b7ef5f3146ea42a4d6d39fb439eab,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 77.95259
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 612b7ef5f3146ea42a4d6d39fb439eab,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 77.95259
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 612b7ef5f3146ea42a4d6d39fb439eab,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 77.95259
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -6057140222963153312, guid: 612b7ef5f3146ea42a4d6d39fb439eab,
         type: 3}
