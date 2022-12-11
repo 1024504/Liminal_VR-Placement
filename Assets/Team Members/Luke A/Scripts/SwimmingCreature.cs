@@ -58,7 +58,7 @@ public class SwimmingCreature : MonoBehaviour
 			if (i != 0) continue;
 			foreach (SkinnedMeshRenderer mesh in _mesh)
 			{
-				mesh.gameObject.SetActive(true);
+				mesh.enabled = true;
 			}
 		}
 	}
