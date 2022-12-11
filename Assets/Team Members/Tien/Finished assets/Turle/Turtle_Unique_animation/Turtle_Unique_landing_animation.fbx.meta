@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 612b7ef5f3146ea42a4d6d39fb439eab
+guid: bb9cd940b037d004aa693d72b9567793
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable:
   - first:
-      74: -3031136733361058501
-    second: Swimming_Cycle
+      74: -6311501247597740048
+    second: Unique_landing_animation
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -35,11 +35,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Swimming_Cycle
-      takeName: Swimming_Cycle
-      internalID: -3031136733361058501
-      firstFrame: 1
-      lastFrame: 315
+      name: Unique_landing_animation
+      takeName: Unique_landing_animation
+      internalID: -6311501247597740048
+      firstFrame: 582
+      lastFrame: 2370
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

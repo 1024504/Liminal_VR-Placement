@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 0c09f170fc3000943b5b1faccdb8c222
+guid: 333edf4b6e4f64a468d72eab3fe0f62c
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable:
   - first:
-      74: 1827226128182048838
-    second: Take 001
+      74: -3031136733361058501
+    second: Swimming_Cycle
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -35,11 +35,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
-      takeName: Take 001
-      internalID: 1827226128182048838
-      firstFrame: 546
-      lastFrame: 1761
+      name: Swimming_Cycle
+      takeName: Swimming_Cycle
+      internalID: -3031136733361058501
+      firstFrame: 1
+      lastFrame: 315
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
