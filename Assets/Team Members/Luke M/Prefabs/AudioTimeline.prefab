@@ -1800,11 +1800,9 @@ PlayableDirector:
     value: {fileID: 804779090}
   - key: {fileID: 5366594544360391665, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
     value: {fileID: 0}
-  - key: {fileID: 1004535064636829178, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
-    value: {fileID: 0}
   - key: {fileID: 5366594544360391665, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
     value: {fileID: 0}
-  - key: {fileID: 1004535064636829178, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 0}
   - key: {fileID: -3227223292830801003, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
     value: {fileID: 0}
@@ -1814,6 +1812,10 @@ PlayableDirector:
     value: {fileID: 87870621639149849}
   - key: {fileID: -6404268621558702439, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
     value: {fileID: 1268839546}
+  - key: {fileID: 3919635917103601772, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 5137409533221401487, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &87870621639149850

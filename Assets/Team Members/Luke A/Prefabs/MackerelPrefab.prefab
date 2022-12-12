@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20fe135e4a50dd74b98262f533d8bad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  invisibleOnStart: 0
   swimmingSpeed: 10
   turningStrength: 0.05
   bezierPoints:
@@ -75,6 +76,7 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   stepsPerPoint: 10
+  _framerate: 72
   SpeedTimings: []
 --- !u!54 &3087835152882140334
 Rigidbody:
@@ -99,12 +101,13 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2440585870579271875}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: dac1688205fabd64a87dca18537b7f97, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.675
+  OutputAudioMixerGroup: {fileID: -5461298121582204650, guid: 12ed9b5ecc7281746bcd625cfdd69ed0,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.449
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -204,7 +207,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2440585870579271875}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02ff0d97a2e472f4294c2efbc744c2ba, type: 3}
   m_Name: 
@@ -342,7 +345,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 08e0387baf1ea954c90093a0a68c3d2b, type: 2}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a82cd775f229e74cb9bbf9a77a783f1, type: 3}
 --- !u!4 &74558837971473721 stripped
