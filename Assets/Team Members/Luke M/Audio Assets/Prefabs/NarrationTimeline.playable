@@ -1486,7 +1486,7 @@ MonoBehaviour:
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
-    volume: 0.093
+    volume: 0.118
 --- !u!114 &-8484968305404485302
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1701,7 +1701,7 @@ MonoBehaviour:
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
-    volume: 0.312
+    volume: 0.352
 --- !u!114 &-7307469577452351556
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3475,7 +3475,7 @@ MonoBehaviour:
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
-    volume: 0.321
+    volume: 0.156
 --- !u!114 &-900565540845784200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5534,7 +5534,7 @@ MonoBehaviour:
     m_Duration: 7.647083333333334
     m_TimeScale: 1
     m_ParentTrack: {fileID: 3919635917103601772}
-    m_EaseInDuration: 0
+    m_EaseInDuration: 1.89
     m_EaseOutDuration: 0
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
