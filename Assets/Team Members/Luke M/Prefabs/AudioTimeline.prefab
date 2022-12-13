@@ -1302,7 +1302,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1450315584
 Transform:
   m_ObjectHideFlags: 0
@@ -1467,7 +1467,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 0.87
   MinDistance: 1.23
-  MaxDistance: 3.98
+  MaxDistance: 5.28
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -1486,8 +1486,8 @@ AudioSource:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.6941608
-      value: 0.45734495
+      time: 0.6999897
+      value: 0.663598
       inSlope: -2.0804985
       outSlope: -2.0804985
       tangentMode: 0
@@ -1802,18 +1802,20 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 5366594544360391665, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
     value: {fileID: 0}
-  - key: {fileID: 0}
+  - key: {fileID: 5366594544360391665, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 1004535064636829178, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
     value: {fileID: 0}
   - key: {fileID: -3227223292830801003, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
     value: {fileID: 0}
-  - key: {fileID: -8723857888468806399, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
-    value: {fileID: 87870621639149849}
   - key: {fileID: -4205019930184357069, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
     value: {fileID: 87870621639149849}
   - key: {fileID: -6404268621558702439, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
     value: {fileID: 1268839546}
   - key: {fileID: 3919635917103601772, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
     value: {fileID: 0}
+  - key: {fileID: -8723857888468806399, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
+    value: {fileID: 87870621639149849}
   - key: {fileID: 5137409533221401487, guid: caca88a0a99924844b9bb6b0a41cef85, type: 2}
     value: {fileID: 0}
   m_ExposedReferences:
