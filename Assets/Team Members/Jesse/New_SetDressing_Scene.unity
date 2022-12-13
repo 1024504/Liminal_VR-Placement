@@ -5218,7 +5218,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 4e2afb41d920dde4ca7b7782bb94dcab, type: 2}
+      objectReference: {fileID: 9100000, guid: 2e60497af2ecf53468bb659954b41dc0, type: 2}
     - target: {fileID: -4216859302048453862, guid: a6dff5fb6051a7447827a802a716c0ea,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20677,6 +20677,11 @@ PrefabInstance:
     - target: {fileID: 7711172761910219680, guid: efdd4937dcacf5141a82a5c2864bb914,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7711172761910219356, guid: efdd4937dcacf5141a82a5c2864bb914,
+        type: 3}
+      propertyPath: SpeedTimings.Array.data[0].delaySinceLastChange
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
