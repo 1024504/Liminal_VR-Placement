@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1092207886191280038}
   - component: {fileID: 210356507089650918}
   m_Layer: 0
-  m_Name: SwimmingTurtlePrefab
+  m_Name: 12-12-22_SwimmingTurtlePrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -139,7 +139,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: dac1688205fabd64a87dca18537b7f97, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.675
   m_Pitch: 1
@@ -241,13 +241,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7711172761910219355}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02ff0d97a2e472f4294c2efbc744c2ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   time: 7
-  bubbleSound: {fileID: 1092207886191280038}
+  bubbleSound: {fileID: 0}
 --- !u!1001 &6919521997451237476
 PrefabInstance:
   m_ObjectHideFlags: 0

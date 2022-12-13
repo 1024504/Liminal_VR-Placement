@@ -1322,6 +1322,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5137409533221401487, guid: caca88a0a99924844b9bb6b0a41cef85,
         type: 2}
+    - target: {fileID: 87870621454096082, guid: a8bccb2cf4b930e4894d18b4b5c0fa00,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[12].value
+      value: 
+      objectReference: {fileID: 1635785112}
+    - target: {fileID: 87870621454096082, guid: a8bccb2cf4b930e4894d18b4b5c0fa00,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[14].value
+      value: 
+      objectReference: {fileID: 1635785112}
     - target: {fileID: 1122228830, guid: a8bccb2cf4b930e4894d18b4b5c0fa00, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 71
@@ -13849,6 +13859,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff255c9cc5104554f9c24e719671cf70, type: 3}
+--- !u!82 &1635785112 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8011721018427390866, guid: ff255c9cc5104554f9c24e719671cf70,
+    type: 3}
+  m_PrefabInstance: {fileID: 1635785111}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1643067286 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 403640, guid: 197516cbd53895c4a884a452291fd503,
@@ -13950,6 +13966,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1467938894}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 31edef3c8fbda1646b035a70c787e73a,
+        type: 3}
+      propertyPath: m_Name
+      value: AngelSwimANM
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 31edef3c8fbda1646b035a70c787e73a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14004,11 +14025,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 31edef3c8fbda1646b035a70c787e73a,
-        type: 3}
-      propertyPath: m_Name
-      value: AngelSwimANM
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31edef3c8fbda1646b035a70c787e73a, type: 3}
