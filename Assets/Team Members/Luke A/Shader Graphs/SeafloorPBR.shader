@@ -66,7 +66,7 @@
 		void surf (Input i, inout SurfaceOutputStandard o) {
             const float2 value = i.worldPos.xz / _CausticSize;
             const float noise = clamp(pow(voronoiNoise(value), 6), 0, 1) * _CausticStrength;
-            const float3 colour = lerp(lerp(tex2D(_MainTex, i.uv_MainTex), _GeneralColour, _GeneralColourStrength), _CausticColour, noise);
+            const float3 colour = lerp(/*lerp(*/tex2D(_MainTex, i.uv_MainTex)/*, _GeneralColour, _GeneralColourStrength)*/, _CausticColour, noise);
 		    
 			o.Albedo = colour;
 		    o.Normal = UnpackNormal(tex2D(_NormalTex, i.uv_NormalTex));

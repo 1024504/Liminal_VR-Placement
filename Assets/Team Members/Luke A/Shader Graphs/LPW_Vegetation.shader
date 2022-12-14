@@ -150,10 +150,11 @@ Shader "Nicrom/LPW/ASE/Low Poly Vegetation"
             const float2 uv_MainTex = i.uv_texcoord * _MainTex_ST.xy + _MainTex_ST.zw;
             const float4 Albedo292 = tex2D( _MainTex, uv_MainTex);
 		    
-		    const float2 value = i.worldPos.xz / _CausticSize;
-            const float noise = clamp(pow(voronoiNoise(value), 6), 0, 1) * _CausticStrength;
-            const float3 colour = lerp(Albedo292, _CausticColour, noise);
-			
+		    // const float2 value = i.worldPos.xz / _CausticSize;
+            // const float noise = clamp(pow(voronoiNoise(value), 6), 0, 1) * _CausticStrength;
+            // const float3 colour = lerp(Albedo292, _CausticColour, noise);
+		    const float3 colour = Albedo292;
+		    
 			o.Albedo = colour.rgb;
 		    o.Normal = UnpackNormal(tex2D(_NormalTex, i.uv_NormalTex));
 		    o.Emission = tex2D(_EmissionTex, uv_MainTex);

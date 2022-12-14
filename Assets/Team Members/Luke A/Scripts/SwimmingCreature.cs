@@ -10,6 +10,7 @@ public class SwimmingCreature : MonoBehaviour
 	public float swimmingSpeed;
 	[Range(0,1)]
 	public float turningStrength;
+	protected Vector3 TurningAngle;
 	public List<Vector3> bezierPoints = new List<Vector3>();
 
 	public bool loopPath = true;
@@ -19,12 +20,12 @@ public class SwimmingCreature : MonoBehaviour
 	public Vector3[] bezierCurve;
 	public int stepsPerPoint = 10;
 
-	private Transform _transform;
-	private Rigidbody _rb;
+	protected Transform _transform;
+	protected Rigidbody _rb;
 
-	[SerializeField] private float _framerate = 72f;
+	public float _framerate = 72f;
 	
-	private int _nextPoint = 1;
+	protected int _nextPoint = 1;
 
 	[Serializable]
 	public struct SpeedTiming
@@ -37,7 +38,7 @@ public class SwimmingCreature : MonoBehaviour
 
 	private SkinnedMeshRenderer[] _mesh;
 	
-	void Start()
+	protected virtual void Start()
 	{
 		_mesh = GetComponentsInChildren<SkinnedMeshRenderer>();
 		_transform = transform;
@@ -63,32 +64,35 @@ public class SwimmingCreature : MonoBehaviour
 		}
 	}
 
-    void Update()
+    protected virtual void Update()
     {
 	    if(swimmingSpeed == 0) return;
 	    if(_nextPoint < bezierCurve.Length) MoveAlongPath();
 	    else if (loopPath)
 	    {
-		    _nextPoint = 1;
+		    _nextPoint = 0;
 		    MoveAlongPath();
 	    }
     }
 
-    void MoveAlongPath()
+    protected virtual void MoveAlongPath()
     {
 	    Vector3 position = _transform.position;
 	    Vector3 heading = Vector3.Normalize(bezierCurve[_nextPoint] - position);
 	    float distanceToNextPoint = Vector3.Distance(position, bezierCurve[_nextPoint]);
-	    if (swimmingSpeed/_framerate < Vector3.Distance(position, bezierCurve[_nextPoint]))
+	    float distanceToMove = swimmingSpeed * Time.deltaTime / _framerate;
+	    if (distanceToMove < distanceToNextPoint)
 	    {
-		    _rb.MovePosition(position + heading*(swimmingSpeed/_framerate));
+		    _rb.MovePosition(position + heading*(distanceToMove));
 	    }
 	    else
 	    {
 		    _rb.MovePosition(position + heading*distanceToNextPoint);
 		    _nextPoint++;
 	    }
-	    _rb.MoveRotation(Quaternion.Slerp(_transform.rotation,Quaternion.LookRotation(heading),turningStrength));
+
+	    Quaternion newRotation = Quaternion.Slerp(_transform.rotation, Quaternion.LookRotation(heading), turningStrength);
+	    _rb.MoveRotation(newRotation);
     }
 
     void CalculateBezierCurve()
