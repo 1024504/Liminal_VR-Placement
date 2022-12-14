@@ -63,7 +63,7 @@ public class SwimmingCreature : MonoBehaviour
 		}
 	}
 
-    protected virtual void Update()
+    protected virtual void FixedUpdate()
     {
 	    if(swimmingSpeed == 0) return;
 	    if(_nextPoint < bezierCurve.Length) MoveAlongPath();
@@ -79,7 +79,7 @@ public class SwimmingCreature : MonoBehaviour
 	    Vector3 position = _transform.position;
 	    Vector3 heading = Vector3.Normalize(bezierCurve[_nextPoint] - position);
 	    float distanceToNextPoint = Vector3.Distance(position, bezierCurve[_nextPoint]);
-	    float distanceToMove = swimmingSpeed * Time.deltaTime / _framerate;
+	    float distanceToMove = swimmingSpeed * Time.fixedDeltaTime / _framerate;
 	    if (distanceToMove < distanceToNextPoint)
 	    {
 		    _rb.MovePosition(position + heading*(distanceToMove));
