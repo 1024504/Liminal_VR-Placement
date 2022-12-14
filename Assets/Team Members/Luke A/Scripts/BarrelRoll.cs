@@ -75,5 +75,9 @@ public class BarrelRoll : MonoBehaviour
 				rWings[i].Rotate(new Vector3(0,0,-maxExtension*Time.fixedDeltaTime/delay));
 			}
 		}
+		foreach (var animator in GetComponentsInChildren<Animator>())
+		{
+			animator.enabled = true;
+		}
 	}
 }
