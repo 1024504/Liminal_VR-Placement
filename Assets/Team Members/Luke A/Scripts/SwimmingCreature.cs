@@ -10,7 +10,6 @@ public class SwimmingCreature : MonoBehaviour
 	public float swimmingSpeed;
 	[Range(0,1)]
 	public float turningStrength;
-	protected Vector3 TurningAngle;
 	public List<Vector3> bezierPoints = new List<Vector3>();
 
 	public bool loopPath = true;
