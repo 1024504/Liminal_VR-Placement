@@ -12,11 +12,11 @@ public class FishFollowerManager : MonoBehaviour
 
 	private void OnEnable()
 	{
-		_fish = FindObjectsOfType<FishFollower>();
+		_fish = GetComponentsInChildren<FishFollower>();
 		for (int i=0; i < _fish.Length; i++)
 		{
 			_fish[i].interpolationStrength = Random.Range(0.005f, 0.1f);
-			_fish[i].offset = new Vector3(edge.x+spread.x*(i+i%3)/_fish.Length,edge.y+spread.y*(Mathf.Pow(i,2)-i)/(Mathf.Pow(_fish.Length,2)-i),edge.z+spread.z*Mathf.Pow(i,2)/Mathf.Pow(_fish.Length,2));
+			_fish[i].offset = new Vector3(edge.x+(i*spread.x+spread.x*Random.Range(0f,1f))/_fish.Length,Random.Range(edge.y, edge.y+spread.y),Random.Range(edge.z, edge.z+spread.z));
 		}
 	}
 

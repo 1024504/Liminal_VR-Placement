@@ -15,12 +15,19 @@ public class FishFollower : MonoBehaviour
 	private void OnEnable()
 	{
 		_transform = transform;
-		// interpolationStrength = Random.Range(0.005f, 0.1f);
+		parentFish = _transform.parent;
+		StartCoroutine(DelayAnimation());
+	}
+
+	private IEnumerator DelayAnimation()
+	{
+		yield return new WaitForSeconds(Random.Range(0f,0.5f));
+		GetComponentInChildren<Animator>().enabled = true;
 	}
 
 	void Update()
 	{
-		_transform.position = Vector3.Lerp(_transform.position, parentFish.position+offset, interpolationStrength);
+		_transform.position = Vector3.Lerp(_transform.position, parentFish.position+parentFish.TransformDirection(offset), interpolationStrength);
 		_transform.rotation = Quaternion.Slerp(_transform.rotation, parentFish.rotation, interpolationStrength);
 	}
 }
