@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 4227418812003779735}
   - component: {fileID: 6062070237679757805}
   - component: {fileID: 932692461189133957}
+  - component: {fileID: 303841445180810513}
   - component: {fileID: 932692461189133958}
   m_Layer: 0
-  m_Name: MantaRaySwinAction
+  m_Name: MantaRayPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -131,6 +132,35 @@ MonoBehaviour:
   stepsPerPoint: 10
   _framerate: 72
   SpeedTimings: []
+--- !u!114 &303841445180810513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932692461189133956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8233fe2dc32978438112294735a530c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lWings:
+  - {fileID: 5277455463646363384}
+  - {fileID: 7155772387585338192}
+  - {fileID: 7599953206546627257}
+  - {fileID: 6570935634001819110}
+  - {fileID: 6570935635188946986}
+  - {fileID: 6570935633775171191}
+  rWings:
+  - {fileID: 4720352279686913273}
+  - {fileID: 3947718619240906446}
+  - {fileID: 8459989056446268635}
+  - {fileID: 6570935633868849333}
+  - {fileID: 6570935633755453252}
+  - {fileID: 6570935635148605656}
+  maxExtension: 20
+  activationDelay: 1
+  totalDuration: 4
 --- !u!54 &932692461189133958
 Rigidbody:
   m_ObjectHideFlags: 0
