@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class MantaRay : SwimmingCreature
 {
-	private Animator animator;
+	private Animator[] animators;
 
 	protected override void Start()
 	{
-		animator = GetComponent<Animator>();
+		animators = GetComponentsInChildren<Animator>();
 		base.Start();
 	}
 
@@ -31,7 +31,10 @@ public class MantaRay : SwimmingCreature
 		Quaternion oldRotation = _transform.rotation;
 		Quaternion newRotation = Quaternion.Slerp(oldRotation, Quaternion.LookRotation(heading), turningStrength);
 		float horizontalAngle = (newRotation.eulerAngles.y - oldRotation.eulerAngles.y + 180) % 360 - 180;
-		animator.SetFloat("Horizontal Angle", horizontalAngle);
+		foreach (Animator animator in animators)
+		{
+			animator.SetFloat("Horizontal Angle", horizontalAngle);
+		}
 		_rb.MoveRotation(newRotation);
 	}
 }
