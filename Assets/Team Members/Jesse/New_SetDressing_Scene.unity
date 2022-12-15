@@ -14750,6 +14750,26 @@ PrefabInstance:
       propertyPath: activationDelay
       value: 178
       objectReference: {fileID: 0}
+    - target: {fileID: 7599953206546627257, guid: 028a64d9ac41f944a861e9618bc0bedd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.042723022
+      objectReference: {fileID: 0}
+    - target: {fileID: 7599953206546627257, guid: 028a64d9ac41f944a861e9618bc0bedd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.12690909
+      objectReference: {fileID: 0}
+    - target: {fileID: 6570935633775171191, guid: 028a64d9ac41f944a861e9618bc0bedd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.042723022
+      objectReference: {fileID: 0}
+    - target: {fileID: 6570935633775171191, guid: 028a64d9ac41f944a861e9618bc0bedd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.12690909
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 028a64d9ac41f944a861e9618bc0bedd, type: 3}
 --- !u!4 &1989320658 stripped
