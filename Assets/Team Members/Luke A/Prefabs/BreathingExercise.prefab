@@ -51,58 +51,58 @@ MonoBehaviour:
   sizeChanges:
   - holdDelay: 24.9
     changeDelay: 27.8
-    newScale: 0.2
+    newScale: 0.04
   - holdDelay: 0.5
     changeDelay: 3
-    newScale: 0.5
+    newScale: 0.1
   - holdDelay: 0.3
     changeDelay: 3
-    newScale: 0.2
+    newScale: 0.04
   - holdDelay: 0.3
     changeDelay: 3
-    newScale: 1
+    newScale: 0.1
   - holdDelay: 0.3
     changeDelay: 4.2
-    newScale: 0.5
+    newScale: 0.04
   - holdDelay: 0.3
     changeDelay: 2.2
-    newScale: 1
+    newScale: 0.1
   - holdDelay: 0.4
     changeDelay: 5.2
-    newScale: 0.5
+    newScale: 0.04
   - holdDelay: 0.4
     changeDelay: 2.6
-    newScale: 1
+    newScale: 0.1
   - holdDelay: 0.5
     changeDelay: 6.1
-    newScale: 0.5
+    newScale: 0.04
   - holdDelay: 0.5
     changeDelay: 3
-    newScale: 1
+    newScale: 0.1
   - holdDelay: 0.6
     changeDelay: 7
-    newScale: 0.5
+    newScale: 0.04
   - holdDelay: 0.6
     changeDelay: 3
-    newScale: 1
+    newScale: 0.1
   - holdDelay: 0.6
     changeDelay: 7
-    newScale: 0.5
+    newScale: 0.04
   - holdDelay: 0.6
     changeDelay: 3
-    newScale: 1
+    newScale: 0.1
   - holdDelay: 0.6
     changeDelay: 7
-    newScale: 0.5
+    newScale: 0.04
   - holdDelay: 0.6
     changeDelay: 3
-    newScale: 1
+    newScale: 0.1
   - holdDelay: 0.6
     changeDelay: 7
-    newScale: 0.5
+    newScale: 0.04
   - holdDelay: 0.6
     changeDelay: 3
-    newScale: 1
+    newScale: 0.1
   - holdDelay: 0.6
     changeDelay: 8
     newScale: 0

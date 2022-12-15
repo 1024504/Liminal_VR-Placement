@@ -52,24 +52,20 @@ public class BubbleBreathing : MonoBehaviour
 				progress += Time.fixedDeltaTime;
 			}
 		}
+
+		StartCoroutine(FadeAway());
 	}
 
-	IEnumerator ChangeColour(float delay)
+	IEnumerator FadeAway()
 	{
 		float progress = 0;
-		while (progress/0.5f < 1)
+		float duration = 4f;
+		Color fade = new Color(0.7294f, 0.9921f, 1f, 0f);
+		while (progress/duration < 1)
 		{
 			yield return new WaitForFixedUpdate();
 			progress += Time.fixedDeltaTime;
-			_renderer.material.SetColor("_EmissionColor", Color.Lerp(_breatheColour, _holdColour, progress/0.5f));
-		}
-		yield return new WaitForSeconds(delay-1f);
-		progress = 0;
-		while (progress/0.5f < 1)
-		{
-			yield return new WaitForFixedUpdate();
-			progress += Time.fixedDeltaTime;
-			_renderer.material.SetColor("_EmissionColor", Color.Lerp(_holdColour, _breatheColour, progress/0.5f));
+			_renderer.material.color = Color.Lerp(_renderer.material.color, fade, Mathf.Pow(progress/duration, 2));
 		}
 	}
 }

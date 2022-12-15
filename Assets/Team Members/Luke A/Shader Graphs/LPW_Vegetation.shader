@@ -23,11 +23,7 @@ Shader "Nicrom/LPW/ASE/Low Poly Vegetation"
 		_NoisePannerSpeed("Noise Panner Speed", Vector) = (0.05,0.03,0,0)
 		[HideInInspector] _texcoord( "", 2D ) = "white" {}
 		[HideInInspector] __dirty( "", Int ) = 1
-	    _CausticColour ("Caustic Colour", Color) = (1,1,1)
-	    _CausticStrength ("Caustic Strength", Range(0,1)) = 0.5
-	    _CausticSize ("Caustic Size", Float) = 0.03
-	    _CausticSpeed ("Caustic Speed", Float) = 1
-	}
+    }
 
 	SubShader
 	{
@@ -64,10 +60,6 @@ Shader "Nicrom/LPW/ASE/Low Poly Vegetation"
 		uniform float _Smoothness;
 		uniform sampler2D _NormalTex;
 		uniform sampler2D _EmissionTex;
-		float _CausticSize;
-		float _CausticSpeed;
-		float _CausticStrength;
-		float3 _CausticColour;
 
 		float3 RotateAroundAxis( float3 center, float3 original, float3 u, float angle )
 		{
@@ -86,26 +78,6 @@ Shader "Nicrom/LPW/ASE/Low Poly Vegetation"
 			float m22 = t * u.z * u.z + C;
 			float3x3 finalMatrix = float3x3( m00, m01, m02, m10, m11, m12, m20, m21, m22 );
 			return mul( finalMatrix, original ) + center;
-		}
-
-		float voronoiNoise(float2 value){
-            const float2 baseCell = floor(value);
-
-		    float minDistToCell = 10;
-		    [unroll]
-		    for(int x=-1; x<=1; x++){
-		        [unroll]
-		        for(int y=-1; y<=1; y++){
-                    const float2 cell = baseCell + float2(x, y);
-                    const float2 cellPosition = cell + voronoi(cell, _Time[1]*_CausticSpeed);
-                    const float2 toCell = cellPosition - value;
-                    const float distToCell = length(toCell);
-		            if(distToCell < minDistToCell){
-		                minDistToCell = distToCell;
-		            }
-		        }
-		    }
-		    return minDistToCell;
 		}
 		
 		void vertexDataFunc( inout appdata_full v, out Input o )
@@ -150,9 +122,6 @@ Shader "Nicrom/LPW/ASE/Low Poly Vegetation"
             const float2 uv_MainTex = i.uv_texcoord * _MainTex_ST.xy + _MainTex_ST.zw;
             const float4 Albedo292 = tex2D( _MainTex, uv_MainTex);
 		    
-		    // const float2 value = i.worldPos.xz / _CausticSize;
-            // const float noise = clamp(pow(voronoiNoise(value), 6), 0, 1) * _CausticStrength;
-            // const float3 colour = lerp(Albedo292, _CausticColour, noise);
 		    const float3 colour = Albedo292;
 		    
 			o.Albedo = colour.rgb;
