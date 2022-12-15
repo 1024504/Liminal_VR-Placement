@@ -44,9 +44,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _CausticSize: 0.03
+    - _CausticSize: 0.3
     - _CausticSpeed: 1
-    - _CausticStrength: 0.5
+    - _CausticStrength: 0
     - _GeneralColourStrength: 0
     - _MBAmplitude: 1
     - _MBAmplitudeOffset: 0.5
