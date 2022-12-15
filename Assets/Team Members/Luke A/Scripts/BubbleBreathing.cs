@@ -11,9 +11,6 @@ public class BubbleBreathing : MonoBehaviour
 	
 	private Renderer _renderer;
 
-	private readonly Color _breatheColour = new Color(0f, 0.8f, 1f, 1f);
-	private readonly Color _holdColour = new Color(0.8f, 0f, 1f, 1f);
-
 	public List<SizeChanging> sizeChanges;
 
 	[Serializable]
