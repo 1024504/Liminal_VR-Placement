@@ -10,6 +10,7 @@ public class SubtitleSlerp : MonoBehaviour
 	private float _time;
 	public float _delay = 3;
 	public float lerpFactor = 0.01f;
+	public float distance = 1.5f;
 	private void Start()
 	{
 		_transform = transform;
@@ -25,12 +26,12 @@ public class SubtitleSlerp : MonoBehaviour
 			_time += Time.deltaTime;
 			
 		}
-		if(angle < 5)
+		if(angle < 2)
 		{
 			_time = 0;
 		}
 		if (_time < _delay) return;
-		_transform.position = Vector3.Slerp(position, camPosition+cameraTransform.forward, lerpFactor);
+		_transform.position = Vector3.Slerp(position, camPosition+cameraTransform.forward*distance, lerpFactor);
 		_transform.rotation = Quaternion.Slerp(_transform.rotation, cameraTransform.rotation, lerpFactor);
 		}
 }
